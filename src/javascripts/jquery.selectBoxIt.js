@@ -2051,7 +2051,7 @@
 
         });
 
-        if(dropdownLabel.length) {
+        if(dropdownLabel.length && dropdownLabel[0].id) {
 
             // MDN `aria-labelledby` description:  Indicates the IDs of the elements that are the labels for the object.
             self.dropdownContainer.attr("aria-labelledby", dropdownLabel[0].id);
